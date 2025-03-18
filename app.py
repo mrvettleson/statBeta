@@ -14,7 +14,7 @@ app = dash.Dash(
     prevent_initial_callbacks=False
 )
 
-
+server = app.server
 navbar = dbc.Navbar(
     dbc.Container(
         [
