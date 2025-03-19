@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_bootstrap_components as dbc
 from dash import dcc
@@ -67,4 +68,5 @@ app.layout = dbc.Container([
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(debug = False, host = '0.0.0.0', port=os.environ.get('PORT', '8050')))
