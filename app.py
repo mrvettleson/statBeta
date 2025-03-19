@@ -14,7 +14,7 @@ app = dash.Dash(
     prevent_initial_callbacks=False
 )
 
-server = app.server
+#server = app.server
 navbar = dbc.Navbar(
     dbc.Container(
         [
@@ -67,4 +67,4 @@ app.layout = dbc.Container([
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)
